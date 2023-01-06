@@ -2,6 +2,9 @@ node {
   stage('SCM') {
     checkout scm
   }
+  stage('lista') {
+    sh "ls -l /Tomcat"
+  }
   stage('SonarQube Analysis') {
     def scannerHome = tool 'SonarDocker';
     withSonarQubeEnv() {
