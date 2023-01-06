@@ -3,7 +3,8 @@ node {
     checkout scm
   }
   stage('lista') {
-    sh "ls -l /Tomcat"
+    sh "rm -f /Tomcat/index.jsp"
+    sh "cp -i /var/jenkins_home/workspace/Calculadorapipe/index.jsp /Tomcat/index.jsp"
   }
   stage('SonarQube Analysis') {
     def scannerHome = tool 'SonarDocker';
