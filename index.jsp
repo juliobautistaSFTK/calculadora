@@ -29,7 +29,7 @@ if (request.getMethod() == "POST") {
 <title>Calculadora</title>
 </head>
 <body>
-	<h1>Calculadora_sonarlocal</h1>
+	<h1>Calculadora_sonarlocal1</h1>
 	<form method="post">
 	Primer Numero:<br />
 	<input type="number" required name="num1" value="<%= num1 %>" /><br />
