@@ -4,7 +4,9 @@ node {
   }
   stage('lista') {
     sh "rm -f /Tomcat/index.jsp"
+    sh "rm -f /FAMSA/index.jsp"
     sh "cp -i /var/jenkins_home/workspace/Calculadorapipe/index.jsp /Tomcat/index.jsp"
+    sh "cp -i /var/jenkins_home/workspace/Calculadorapipe/index.jsp /FAMSA/index.jsp"
   }
   stage('SonarQube Analysis') {
     def scannerHome = tool 'SonarDocker';
