@@ -3,9 +3,9 @@ node {
     checkout scm
   }
   stage('lista') {
-    sh "rm -f /Tomcat/index.jsp"
+    #sh "rm -f /Tomcat/index.jsp"
     sh "rm -f /FAMSA/sample2/index.jsp"
-    sh "cp -i /var/jenkins_home/workspace/Calculadorapipe/index.jsp /Tomcat/index.jsp"
+    #sh "cp -i /var/jenkins_home/workspace/Calculadorapipe/index.jsp /Tomcat/index.jsp"
     sh "cp -i /var/jenkins_home/workspace/Calculadorapipe/index.jsp /FAMSA/sample2/index.jsp"
   }
   stage('SonarQube Analysis') {
