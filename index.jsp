@@ -40,7 +40,7 @@ if (request.getMethod() == "POST") {
 	<input type="submit" value="Multiplicar" name="multiplicar" />
 	<input type="submit" value="Dividir" name="dividir" />
 	<br /><br />
-	Resultado sonar Docker:<%=resultado%>
+	Resultado sonar Docker1:<%=resultado%>
 	</form>
 
 </body>
