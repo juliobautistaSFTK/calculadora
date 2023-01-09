@@ -29,7 +29,7 @@ if (request.getMethod() == "POST") {
 <title>Calculadora</title>
 </head>
 <body>
-	<h1>Calculadora_sonar docker</h1>
+	<h1>Calculadora_sonar docker visto desde sampl2</h1>
 	<form method="post">
 	Primer Numero:<br />
 	<input type="number" required name="num1" value="<%= num1 %>" /><br />
@@ -40,7 +40,7 @@ if (request.getMethod() == "POST") {
 	<input type="submit" value="Multiplicar" name="multiplicar" />
 	<input type="submit" value="Dividir" name="dividir" />
 	<br /><br />
-	Resultado sonar Dockert tomc:<%=resultado%>
+	Resultado sonar Dockert tomc desde sample2:<%=resultado%>
 	</form>
 
 </body>
